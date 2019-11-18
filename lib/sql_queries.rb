@@ -19,9 +19,8 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "select count(color) as Result from blog_posts
-  group by blog_id
-  order by Result desc
+  "select count(color)
+  order by count(color) desc
   limit 1"
 end
 
